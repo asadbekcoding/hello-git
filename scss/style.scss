@@ -21,7 +21,7 @@ header{
     .header{
         max-width: 1352px;
         margin: 0 auto;
-        padding-bottom: 300px;
+        padding-bottom: 350px;
         .nav{
             max-width: 1352px;
             padding: 34px 15px 0px 15px;
@@ -48,6 +48,18 @@ header{
                    }
                }
                .btn{
+                width: 140px;
+                height: 56px;
+                flex-shrink: 0;
+                border-radius: 28px;
+                background: #FFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;            
+                &:hover{
+                    opacity: 0.3;
+                }
                    a{
                        button{
                            color: #24303E;
@@ -56,11 +68,12 @@ header{
                            line-height: 25px;
                            letter-spacing: -0.107px;
                            text-transform: uppercase;
-                           padding: 16px 30px 15px 32px;
-                           border-radius: 28px;
-                           background: #FFF;
                            border: none;
                            cursor: pointer;
+                           background-color: transparent;
+                           &:hover{
+                            color: #FFF;
+                           }
                        }
                    }
                }
@@ -86,16 +99,22 @@ header{
 }
 main{
     .main-element{
-        max-width: 1588px;
-        padding-left: 165px;
+        max-width: 1440px;
+        padding-left: 100px;
         margin: 0 auto;
         display: flex;
         justify-content: space-between;
         align-items: center;
         column-gap: 106px;
+        &:nth-child(2){
+            flex-direction: row-reverse;
+            padding-left: 0;
+            padding-right: 165px;
+        }
         .main-element-child-1{
             max-width: 445px;
             h2{
+                max-width: 380px;
                 color: #24303E;
                 font-size: 40px;
                 font-weight: 900;
@@ -139,5 +158,11 @@ main{
                 }
             }
         }
+        .main-element-child-2{
+            img{
+                display: block;
+            }
+        }
+
     }
 }
