@@ -161,4 +161,43 @@ main .main-element .main-element-child-1 .btn-primary a button {
 }
 main .main-element .main-element-child-2 img {
   display: block;
+}
+main .main-second {
+  max-width: 1440px;
+  margin: 0 auto;
+  margin-bottom: 160px;
+  display: flex;
+}
+main .main-second .main-second-1 {
+  width: 720px;
+  height: 600px;
+  background-image: url(../img/main-img-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+main .main-second .main-second-1 h2 {
+  color: #24554A;
+  font-size: 28px;
+  font-weight: 900;
+  letter-spacing: -0.2px;
+  margin-bottom: 27px;
+}
+main .main-second .main-second-1 p {
+  max-width: 339px;
+  color: #3E7467;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: -0.114px;
+  text-align: center;
+  margin-bottom: 59px;
+}
+main .main-second .second {
+  background-image: url(../img/main-img-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
