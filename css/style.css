@@ -200,4 +200,89 @@ main .main-second .second {
   background-image: url(../img/main-img-4.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+main .about {
+  max-width: 1080px;
+  padding: 0px 15px 0px 15px;
+  margin: 0 auto;
+  margin-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .about .about-text h1 {
+  color: #A7AAAD;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 81px;
+}
+main .about .about-element {
+  display: flex;
+  -moz-column-gap: 30px;
+       column-gap: 30px;
+}
+main .about .about-element .about-content {
+  max-width: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .about .about-element .about-content p {
+  color: #5B636D;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -0.129px;
+  text-align: center;
+  margin-top: 58px;
+}
+main .about .about-element .about-content h4 {
+  color: #24303E;
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: -0.129px;
+  margin-top: 69px;
+}
+main .about .about-element .about-content a {
+  color: #A7AAAD;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 25px;
+  letter-spacing: -0.1px;
+  margin-top: 9px;
+}
+main .images {
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+}
+main .images .images-1 {
+  width: 360px;
+  height: 447px;
+  background-image: url(../img/images-1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .images .images-2 {
+  width: 360px;
+  height: 447px;
+  background-image: url(../img/images-2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .images .images-3 {
+  width: 360px;
+  height: 447px;
+  background-image: url(../img/images-3.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+main .images .images-4 {
+  width: 360px;
+  height: 447px;
+  background-image: url(../img/images-4.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }/*# sourceMappingURL=style.css.map */
