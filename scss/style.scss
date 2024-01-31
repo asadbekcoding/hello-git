@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600;900&display=swap');
+body{
+    font-family: 'Barlow';
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+header{
+    background-image: url(../img/disktop-img-header-background.png);
+    background-repeat: no-repeat;
+    background-size: cover  ;
+    background-position: center;
+    .header{
+        max-width: 1352px;
+        margin: 0 auto;
+        padding-bottom: 300px;
+        .nav{
+            max-width: 1352px;
+            padding: 34px 15px 0px 15px;
+            margin: 0 auto;
+            margin-bottom: 105px;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+           .navbar{
+               display: flex;
+               align-items: center;
+               column-gap: 47px;
+               ul{
+                   display: flex;
+                   column-gap: 47px;
+                   li{
+                       a{
+                           color: #FFF;
+                           font-size: 18px;
+                           font-weight: 600;
+                           line-height: 25px;
+                           letter-spacing: -0.129px;
+                       }
+                   }
+               }
+               .btn{
+                   a{
+                       button{
+                           color: #24303E;
+                           font-size: 15px;
+                           font-weight: 700;
+                           line-height: 25px;
+                           letter-spacing: -0.107px;
+                           text-transform: uppercase;
+                           padding: 16px 30px 15px 32px;
+                           border-radius: 28px;
+                           background: #FFF;
+                           border: none;
+                           cursor: pointer;
+                       }
+                   }
+               }
+           }
+       }
+      .text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        h1{
+            color: #FFF;
+            font-family: "Fraunces 9pt Soft";
+            font-size: 56px;
+            font-weight: 900;
+            letter-spacing: 8.75px;
+            text-transform: uppercase;
+            text-align: center;
+            margin-bottom: 95px;
+           }
+      }
+      
+    }
+}
+// main{
+//     .main-element{
+//         max-width: 1588px;
+//         padding-left: 165px;
+//         margin: 0 auto;
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         column-gap: 106px;
+//         .main-element-child-1{
+//             max-width: 445px;
+//             h2{
+//                 color: #24303E;
+//                 font-size: 40px;
+//                 font-weight: 900;
+//                 letter-spacing: -0.286px;
+//             }
+//             p{
+//                 color: #808397;
+//                 font-size: 18px;
+//                 font-weight: 600;
+//                 line-height: 30px;
+//                 letter-spacing: -0.129px;
+//             }
+//             .btn-primary{
+//                 width: 137px;
+//                 height: 10px;
+//                 flex-shrink: 0;
+//                 border-radius: 28px;
+//                 opacity: 0.25;
+//                 background: #FAD400;
+//                 display: flex;
+//                 justify-content: center;
+//                 align-items: flex-end;
+//                 a{
+//                     button{
+//                         color: #24303E;
+//                         font-size: 15px;
+//                         font-weight: 900;
+//                         line-height: 25px;
+//                         letter-spacing: 1px;
+//                         text-transform: uppercase;
+//                         background-color: transparent;
+//                         border: none;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
