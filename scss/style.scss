@@ -269,7 +269,7 @@ main{
         margin: 0 auto;
         display: flex;
         justify-content: center;
-        flex-direction: column;
+        flex-wrap: wrap;
         align-items: center;
       .images-first-child{
         display: flex;
@@ -341,18 +341,27 @@ footer{
     main{
         .main-element{
             flex-direction: column-reverse;
-            padding-left: 0px;
-            h2{
-                text-align: center;
-            }
-            p{
-                text-align: center;
-            }
+            padding-left: 0px;           
             .main-element-child-1{
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 margin-bottom: 50px;
+                max-width: 600px;
+                h2{
+                    max-width: 500px;
+                    margin-top: 50px; 
+                    text-align: center;
+                    max-width: 500px;
+                }
+                 p{
+                text-align: center;
+            }
+            }
+            .main-element-child-2{
+                img{
+                    width: 820px;
+                }
             }
             &:nth-child(2){
                 flex-direction: column-reverse;
@@ -360,6 +369,9 @@ footer{
                 .main-element-child-2{
                     display: flex;
                     align-items: center;
+                    img{
+                        width: 820px;
+                    }
                 }
             }
         }
@@ -402,6 +414,7 @@ footer{
             .main-element-child-1{
                   h2{
                     font-size: 32px;
+                    margin-top: 50px;
                   }
             }
           
@@ -428,6 +441,7 @@ footer{
         .main-second{
             flex-direction: column;
             align-items: center;
+            margin-bottom: 64px;
             .main-second-1{
                 max-width: 100%;
                 background-image: url(../img/mobile-main-img-3.png);
@@ -437,13 +451,47 @@ footer{
                 background-image: url(../img/mobile-main-img-4.png);
             }
         }
-    }
-    .about{
+        .about{
+            margin-bottom: 80px;
         .about-text{
             margin-bottom: 64px;
             h1{
                 font-size: 16px;
+                margin-bottom: 0;
             }
         }
+        .about-element{
+            row-gap: 64px;
+            .about-content{
+                p{
+                    margin-top: 32px;
+                }
+            }
+        }
+            }
+        .images{
+        .images-first-child{
+            .images-1{
+                max-width: 180px;
+                height: 180px;
+            }
+            .images-2{
+                max-width: 180px;
+                height: 180px;
+            }
+        }
+        .images-second-child{
+            .images-3{
+                width: 180px;
+                height: 180px;
+            }
+            .images-4{
+                width: 180px;
+                height: 180px;
+            }
+        }
+        }
     }
+    
+    
 }

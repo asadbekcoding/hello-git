@@ -267,7 +267,7 @@ main .images {
   margin: 0 auto;
   display: flex;
   justify-content: center;
-  flex-direction: column;
+  flex-wrap: wrap;
   align-items: center;
 }
 main .images .images-first-child {
@@ -340,17 +340,24 @@ footer .foter ul li a:hover {
     flex-direction: column-reverse;
     padding-left: 0px;
   }
-  main .main-element h2 {
-    text-align: center;
-  }
-  main .main-element p {
-    text-align: center;
-  }
   main .main-element .main-element-child-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 50px;
+    max-width: 600px;
+  }
+  main .main-element .main-element-child-1 h2 {
+    max-width: 500px;
+    margin-top: 50px;
+    text-align: center;
+    max-width: 500px;
+  }
+  main .main-element .main-element-child-1 p {
+    text-align: center;
+  }
+  main .main-element .main-element-child-2 img {
+    width: 820px;
   }
   main .main-element:nth-child(2) {
     flex-direction: column-reverse;
@@ -359,6 +366,9 @@ footer .foter ul li a:hover {
   main .main-element:nth-child(2) .main-element-child-2 {
     display: flex;
     align-items: center;
+  }
+  main .main-element:nth-child(2) .main-element-child-2 img {
+    width: 820px;
   }
   main .about .about-element {
     flex-direction: column;
@@ -391,6 +401,7 @@ footer .foter ul li a:hover {
   }
   main .main-element .main-element-child-1 h2 {
     font-size: 32px;
+    margin-top: 50px;
   }
   main .main-element .main-element-child-2 .disktop-img {
     display: none;
@@ -408,6 +419,7 @@ footer .foter ul li a:hover {
   main .main-second {
     flex-direction: column;
     align-items: center;
+    margin-bottom: 64px;
   }
   main .main-second .main-second-1 {
     max-width: 100%;
@@ -417,10 +429,36 @@ footer .foter ul li a:hover {
   main .main-second .second {
     background-image: url(../img/mobile-main-img-4.png);
   }
-  .about .about-text {
+  main .about {
+    margin-bottom: 80px;
+  }
+  main .about .about-text {
     margin-bottom: 64px;
   }
-  .about .about-text h1 {
+  main .about .about-text h1 {
     font-size: 16px;
+    margin-bottom: 0;
+  }
+  main .about .about-element {
+    row-gap: 64px;
+  }
+  main .about .about-element .about-content p {
+    margin-top: 32px;
+  }
+  main .images .images-first-child .images-1 {
+    max-width: 180px;
+    height: 180px;
+  }
+  main .images .images-first-child .images-2 {
+    max-width: 180px;
+    height: 180px;
+  }
+  main .images .images-second-child .images-3 {
+    width: 180px;
+    height: 180px;
+  }
+  main .images .images-second-child .images-4 {
+    width: 180px;
+    height: 180px;
   }
 }/*# sourceMappingURL=style.css.map */
