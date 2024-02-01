@@ -261,8 +261,13 @@ main{
         max-width: 1440px;
         margin: 0 auto;
         display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+      .images-first-child{
+        display: flex;
         .images-1{
-            width: 360px;
+            width:360px;
             height: 447px;
             background-image: url(../img/images-1.png);
             background-repeat: no-repeat;
@@ -275,6 +280,9 @@ main{
             background-repeat: no-repeat;
             background-size: cover;
         }
+      }
+       .images-second-child{
+        display: flex;
         .images-3{
             width: 360px;
             height: 447px;
@@ -289,6 +297,7 @@ main{
             background-repeat: no-repeat;
             background-size: cover;
         }
+       }
     }
 }
 footer{
@@ -296,8 +305,7 @@ footer{
     .foter{
         max-width: 1440px;
         margin: 0 auto;
-        padding: 72px 571px 72px 571px;
-        
+        padding: 72px 0px 72px 0px;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -313,7 +321,44 @@ footer{
                     font-weight: 600;
                     line-height: 25px;
                     letter-spacing: -0.129px;
+                    transition: 0.4s;
+                    &:hover{
+                        color: #FFF;
+                    }
                 }
+            }
+        }
+    }
+}
+@media(max-width:1400px){
+    main{
+        .main-element{
+            flex-direction: column-reverse;
+            padding-left: 0px;
+            h2{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+            }
+            .main-element-child-1{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 50px;
+            }
+            &:nth-child(2){
+                flex-direction: column-reverse;
+                padding-right: 0px;
+                .main-element-child-2{
+                    display: flex;
+                    align-items: center;
+                }
+            }
+        }
+        .about{
+            .about-element{
+                flex-direction: column;
             }
         }
     }

@@ -257,29 +257,38 @@ main .images {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
-main .images .images-1 {
+main .images .images-first-child {
+  display: flex;
+}
+main .images .images-first-child .images-1 {
   width: 360px;
   height: 447px;
   background-image: url(../img/images-1.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .images .images-2 {
+main .images .images-first-child .images-2 {
   width: 360px;
   height: 447px;
   background-image: url(../img/images-2.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .images .images-3 {
+main .images .images-second-child {
+  display: flex;
+}
+main .images .images-second-child .images-3 {
   width: 360px;
   height: 447px;
   background-image: url(../img/images-3.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
-main .images .images-4 {
+main .images .images-second-child .images-4 {
   width: 360px;
   height: 447px;
   background-image: url(../img/images-4.png);
@@ -293,7 +302,7 @@ footer {
 footer .foter {
   max-width: 1440px;
   margin: 0 auto;
-  padding: 72px 571px 72px 571px;
+  padding: 72px 0px 72px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -311,4 +320,38 @@ footer .foter ul li a {
   font-weight: 600;
   line-height: 25px;
   letter-spacing: -0.129px;
+  transition: 0.4s;
+}
+footer .foter ul li a:hover {
+  color: #FFF;
+}
+
+@media (max-width: 1400px) {
+  main .main-element {
+    flex-direction: column-reverse;
+    padding-left: 0px;
+  }
+  main .main-element h2 {
+    text-align: center;
+  }
+  main .main-element p {
+    text-align: center;
+  }
+  main .main-element .main-element-child-1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 50px;
+  }
+  main .main-element:nth-child(2) {
+    flex-direction: column-reverse;
+    padding-right: 0px;
+  }
+  main .main-element:nth-child(2) .main-element-child-2 {
+    display: flex;
+    align-items: center;
+  }
+  main .about .about-element {
+    flex-direction: column;
+  }
 }/*# sourceMappingURL=style.css.map */
