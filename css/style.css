@@ -35,7 +35,7 @@ header .header .nav {
   margin-bottom: 105px;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
 }
 header .header .nav .navbar {
   display: flex;
@@ -82,6 +82,9 @@ header .header .nav .navbar .btn a button {
 }
 header .header .nav .navbar .btn a button:hover {
   color: #FFF;
+}
+header .header .nav .menu {
+  display: none;
 }
 header .header .text {
   display: flex;
@@ -159,8 +162,14 @@ main .main-element .main-element-child-1 .btn-primary a button {
   border: none;
   cursor: pointer;
 }
+main .main-element .main-element-child-2 {
+  max-width: 100%;
+}
 main .main-element .main-element-child-2 img {
   display: block;
+}
+main .main-element .main-element-child-2 .mobile-img {
+  display: none;
 }
 main .main-second {
   max-width: 1440px;
@@ -353,5 +362,65 @@ footer .foter ul li a:hover {
   }
   main .about .about-element {
     flex-direction: column;
+  }
+}
+@media (max-width: 720px) {
+  header {
+    background-image: url(../img/mobile-img-header-background.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+  }
+  header .header .nav {
+    margin-bottom: 91px;
+  }
+  header .header .nav .navbar {
+    display: none;
+  }
+  header .header .nav .menu {
+    display: block;
+  }
+  header .header .text h1 {
+    max-width: 327px;
+    font-size: 40px;
+    letter-spacing: 6.25px;
+    margin-bottom: 52px;
+  }
+  main .main-element {
+    max-width: 100%;
+  }
+  main .main-element .main-element-child-1 h2 {
+    font-size: 32px;
+  }
+  main .main-element .main-element-child-2 .disktop-img {
+    display: none;
+  }
+  main .main-element .main-element-child-2 .mobile-img {
+    display: block;
+  }
+  main .main-element .main-element-child-2 .mobile-img img {
+    max-width: 100%;
+  }
+  main .main-element:nth-child(2) .mobile-img img {
+    display: block;
+    width: 700px;
+  }
+  main .main-second {
+    flex-direction: column;
+    align-items: center;
+  }
+  main .main-second .main-second-1 {
+    max-width: 100%;
+    background-image: url(../img/mobile-main-img-3.png);
+    background-repeat: no-repeat;
+  }
+  main .main-second .second {
+    background-image: url(../img/mobile-main-img-4.png);
+  }
+  .about .about-text {
+    margin-bottom: 64px;
+  }
+  .about .about-text h1 {
+    font-size: 16px;
   }
 }/*# sourceMappingURL=style.css.map */
