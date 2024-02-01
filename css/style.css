@@ -136,7 +136,7 @@ main .main-element .main-element-child-1 p {
   letter-spacing: -0.129px;
   margin-bottom: 42px;
 }
-main .main-element .main-element-child-1 .btn-primary {
+main .main-element .main-element-child-1 .btn-primary .btn {
   width: 137px;
   height: 10px;
   flex-shrink: 0;
@@ -148,10 +148,10 @@ main .main-element .main-element-child-1 .btn-primary {
   align-items: flex-end;
   transition: 0.4s;
 }
-main .main-element .main-element-child-1 .btn-primary:hover {
+main .main-element .main-element-child-1 .btn-primary .btn:hover {
   background: #FAD400;
 }
-main .main-element .main-element-child-1 .btn-primary a button {
+main .main-element .main-element-child-1 .btn-primary .btn a button {
   color: #24303E;
   font-size: 15px;
   font-weight: 900;
@@ -161,6 +161,12 @@ main .main-element .main-element-child-1 .btn-primary a button {
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+main .main-element .main-element-child-1 .btn-primary .primary {
+  background: #df8d82;
+}
+main .main-element .main-element-child-1 .btn-primary .primary:hover {
+  background: #FE7766;
 }
 main .main-element .main-element-child-2 {
   max-width: 100%;

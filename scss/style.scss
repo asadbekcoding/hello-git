@@ -132,13 +132,14 @@ main{
                 letter-spacing: -0.129px;
                 margin-bottom: 42px;
             }
-            .btn-primary{
+           .btn-primary{
+            .btn{
                 width: 137px;
                 height: 10px;
                 flex-shrink: 0;
                 border-radius: 28px;
                 border-radius: 28px;
-                background: #ddcc6b ;
+                background: #ddcc6b;
                 display: flex;
                 justify-content: center;
                 align-items: flex-end;
@@ -160,6 +161,13 @@ main{
                     }
                 }
             }
+            .primary{
+            background: #df8d82;
+            &:hover{
+                background: #FE7766;
+            }
+            }
+           }
         }
         .main-element-child-2{
             max-width: 100%;
